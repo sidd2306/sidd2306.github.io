@@ -1,0 +1,61 @@
+header,header:hover {
+    font-family:"Arial";
+    font-size:50px;
+    background-color: greenyellow;
+    text-align: center;
+}
+a b {
+    text-decoration: none;  
+    color: cornflowerblue;
+}
+a b:hover{
+    text-decoration: none;  
+    color: gray;
+}
+a,a:hover,a:active{
+    text-decoration: none;
+    color: black;
+}
+a:focus{
+    text-decoration: none;
+    color: blue;
+}
+p {
+    text-align: center;
+}
+i {
+    visibility: hidden;
+}
+p#heading{
+    font-style: oblique;
+}
+table#table1 {
+    border: 1px solid black;
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+    text-align: center;
+}
+th{
+    background-color: aquamarine;
+}
+tr{
+    background-color: lightcyan
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+.content{
+    width=80px;
+}
+@media only screen and (max-width: 600px) {
+    i{visibility: visible;}
+}
+#image{
+    margin-left: 100px;
+    margin-right: auto;
+    width: 30%;
+}
