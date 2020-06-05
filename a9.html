@@ -2,8 +2,30 @@
 <html>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Android OS</title>
+        <style> 
+            input[type=button] {
+              float: right; 
+              border: none;
+              color: black;
+              padding: 8px 16px;
+              background-color: darkgray;
+              transition-duration: 0.4s;
+            
+            }
+            input[type=button]:hover,input[type=button]focus {
+              float: right;
+              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+              border: none;
+              color: black;
+              padding: 8px 16px;
+              background-color: darkgray;
+              transition-duration: 0.4s;
+            }
+        </style>
     </head>
     <body>
         <header><a href="index.html">Android</a></header>
@@ -35,6 +57,9 @@
             </ul>
           </div>
         </nav>
+          <input type="button" value="Dark Mode" onclick="dark()" ondblclick="light()">
+        <i>This is a small screen</i>
+        <h5 id="darkm">.</h5>
         <br>
         <ul>
                 <li><a href="a10.html"><b>Android 10</b></a></li>
@@ -49,7 +74,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                <p>Android Pie (codenamed Android P during development) is the ninth major release and the 16th version of the Android mobile operating system. It was first released as a developer preview on March 7, 2018, and released publicly on August 6, 2018.
+                <p id="desc">Android Pie (codenamed Android P during development) is the ninth major release and the 16th version of the Android mobile operating system. It was first released as a developer preview on March 7, 2018, and released publicly on August 6, 2018.
 
                 As of March 2020, 40% of Android devices run Pie, making it the most popular Android version.</p>
                 </div>
