@@ -3,12 +3,35 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sass.css">
+    <script src="script.js"></script>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Android OS</title>
+        <style> 
+            input[type=button] {
+              float: right; 
+              border: none;
+              color: black;
+              padding: 8px 16px;
+              background-color: darkgray;
+              transition-duration: 0.4s;
+            
+            }
+            input[type=button]:hover,input[type=button]focus {
+              float: right;
+              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+              border: none;
+              color: black;
+              padding: 8px 16px;
+              background-color: darkgray;
+              transition-duration: 0.4s;
+            }
+        </style>
     </head>
     <body>
-        <header>Android</header>
+        <header>Android
+                         
+        </header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand" href="index.html">Android</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +60,9 @@
             </ul>
           </div>
         </nav>
+        <input type="button" value="Dark Mode" onclick="dark()" ondblclick="light()">
         <i>This is a small screen</i>
+        <h5 id="darkm">.</h5>
         <br>
         <ul>
                 <li><a href="a10.html"><b>Android 10</b></a></li>
@@ -48,6 +73,7 @@
                 <li><a href="a5.html"><b>Android 5</b></a></li>
         </ul>  
         <img src="https://lh3.googleusercontent.com/GTmuiIZrppouc6hhdWiocybtRx1Tpbl52eYw4l-nAqHtHd4BpSMEqe-vGv7ZFiaHhG_l4v2m5Fdhapxw9aFLf28ErztHEv5WYIz5fA" alt="Android Image from Internet" class="center" height="200" width="80">
+        <br><br>
         <table id="table1">
             <tr>
                 <th>Code name</th>
